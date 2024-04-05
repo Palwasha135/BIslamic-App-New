@@ -21,146 +21,27 @@ class PP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        onleadingtap: () {
-          Navigator.pop(context,
-              MaterialPageRoute(builder: (context) => const HomeScreen()));
-        },
-        actions: const [],
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 59.0),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Tauheedscreen()));
-                    },
-                    child: const Pillar(
-                      // onTap: () {
-                      //   Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
-                      // },
-                      fcontainerclr: Colors.brown,
-                      firstheight: 130,
-                      firstwidth: 100,
-                      scontainerclr: Colors.white,
-                      secondheight: 100,
-                      secondwidth: 70,
-                      tcontainerclr: Colors.green,
-                      tecondheight: 55,
-                      tecondwidth: 55,
-                      imagepath: 'assets/images/Tauheed.png',
-                      text: 'Kalma',
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 100,
-                  ),
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Salahscreen()));
-                    },
-                    child: const Pillar(
-                      // onTap: () {
-                      //   Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
-                      // },
-                      fcontainerclr: Colors.brown,
-                      firstheight: 130,
-                      firstwidth: 100,
-                      scontainerclr: Colors.white,
-                      secondheight: 100,
-                      secondwidth: 70,
-                      tcontainerclr: Colors.green,
-                      tecondheight: 55,
-                      tecondwidth: 55,
-                      imagepath: 'assets/images/Salah.png',
-                      text: 'Salah',
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 17,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Zakatscreen()));
-                    },
-                    child: const Pillar(
-                      // onTap: () {
-                      //         Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
-                      //       },
-                      fcontainerclr: Colors.grey,
-                      firstheight: 130,
-                      firstwidth: 100,
-                      scontainerclr: Colors.white,
-                      secondheight: 100,
-                      secondwidth: 70,
-                      tcontainerclr: Colors.green,
-                      tecondheight: 55,
-                      tecondwidth: 55,
-                      imagepath: 'assets/images/Zakat.png',
-                      text: 'Zakat',
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Hajjscreen()));
-                    },
-                    child: const Pillar(
-                      fcontainerclr: Colors.brown,
-                      firstheight: 130,
-                      firstwidth: 100,
-                      scontainerclr: Colors.white,
-                      secondheight: 100,
-                      secondwidth: 70,
-                      tcontainerclr: Colors.green,
-                      tecondheight: 55,
-                      tecondwidth: 55,
-                      imagepath: 'assets/images/Hajj.png',
-                      text: 'Hajj',
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 100,
-                  ),
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Hajjscreen()));
-                    },
-                    child: InkWell(
+        appBar: MyAppBar(
+          onleadingtap: () {
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const HomeScreen()));
+          },
+          actions: const [],
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 59.0),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Fastingscreen()));
+                                builder: (context) => const Tauheedscreen()));
                       },
                       child: const Pillar(
                         // onTap: () {
@@ -175,21 +56,141 @@ class PP extends StatelessWidget {
                         tcontainerclr: Colors.green,
                         tecondheight: 55,
                         tecondwidth: 55,
-                        imagepath: 'assets/images/Fasting.png',
-                        text: 'Fasting',
+                        imagepath: 'assets/images/Tauheed.png',
+                        text: 'Kalma',
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                    const SizedBox(
+                      width: 100,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Salahscreen()));
+                      },
+                      child: const Pillar(
+                        // onTap: () {
+                        //   Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
+                        // },
+                        fcontainerclr: Colors.brown,
+                        firstheight: 130,
+                        firstwidth: 100,
+                        scontainerclr: Colors.white,
+                        secondheight: 100,
+                        secondwidth: 70,
+                        tcontainerclr: Colors.green,
+                        tecondheight: 55,
+                        tecondwidth: 55,
+                        imagepath: 'assets/images/Salah.png',
+                        text: 'Salah',
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 17,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Zakatscreen()));
+                      },
+                      child: const Pillar(
+                        // onTap: () {
+                        //         Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
+                        //       },
+                        fcontainerclr: Colors.grey,
+                        firstheight: 130,
+                        firstwidth: 100,
+                        scontainerclr: Colors.white,
+                        secondheight: 100,
+                        secondwidth: 70,
+                        tcontainerclr: Colors.green,
+                        tecondheight: 55,
+                        tecondwidth: 55,
+                        imagepath: 'assets/images/Zakat.png',
+                        text: 'Zakat',
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Hajjscreen()));
+                      },
+                      child: const Pillar(
+                        fcontainerclr: Colors.brown,
+                        firstheight: 130,
+                        firstwidth: 100,
+                        scontainerclr: Colors.white,
+                        secondheight: 100,
+                        secondwidth: 70,
+                        tcontainerclr: Colors.green,
+                        tecondheight: 55,
+                        tecondwidth: 55,
+                        imagepath: 'assets/images/Hajj.png',
+                        text: 'Hajj',
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 100,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Hajjscreen()));
+                      },
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Fastingscreen()));
+                        },
+                        child: const Pillar(
+                          // onTap: () {
+                          //   Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
+                          // },
+                          fcontainerclr: Colors.brown,
+                          firstheight: 130,
+                          firstwidth: 100,
+                          scontainerclr: Colors.white,
+                          secondheight: 100,
+                          secondwidth: 70,
+                          tcontainerclr: Colors.green,
+                          tecondheight: 55,
+                          tecondwidth: 55,
+                          imagepath: 'assets/images/Fasting.png',
+                          text: 'Fasting',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
-      ),
-      bottomNavigationBar: Homeicon(onPressed: () {
-        Navigator.pop(context,
-            MaterialPageRoute(builder: (context) => const HomeScreen()));
-      }),
-    );
+        bottomNavigationBar: Homeicon()
+        //   onPressed: () {
+        //   Navigator.pop(context,
+        //       MaterialPageRoute(builder: (context) => const HomeScreen()));
+        // }),
+        );
   }
 }

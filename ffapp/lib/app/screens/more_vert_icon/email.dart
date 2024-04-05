@@ -3,7 +3,7 @@ import 'package:fyp/app/reusable_widgets/home_icon.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 //final Uri _url = Uri.parse('hilalkhan10005@gmail.com');
-final emails = ['BIslamicApp@gmail.com'];
+final emails = ['bislamicapp@gmail.com'];
 
 class Email extends StatelessWidget {
   Email({super.key});
