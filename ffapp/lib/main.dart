@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context)
-  //                      Theme coding
+  //                     TC
   // => ChangeNotifierProvider(
   //       create: (context) => ThemeProvider(),
   //       builder: (context, _) {
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
   {
     return MaterialApp(
       title: 'B Islamic',
-      //                             THEME CODING
+      //                             TC
       // themeMode: themeProvider.themeMode,
       // theme: MyThemes.lightTheme,
       // darkTheme: MyThemes.darkTheme,
