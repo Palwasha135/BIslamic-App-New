@@ -5,10 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:fyp/app/constant.dart';
 import 'package:fyp/app/provider/theme_provider.dart';
 import 'package:fyp/app/screens/home.dart';
-import 'package:fyp/app/screens/splashScreen.dart';
-// import 'package:provider/provider.dart';
+
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-// import 'dart:html';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,7 +25,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context)
-  //                     TC
+  //                     ThemeCoding
   // => ChangeNotifierProvider(
   //       create: (context) => ThemeProvider(),
   //       builder: (context, _) {

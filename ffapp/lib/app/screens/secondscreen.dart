@@ -9,7 +9,7 @@ import 'package:fyp/app/screens/Dua/dua_main_screen/level3mainScreen.dart';
 import 'package:fyp/app/screens/dua/dua_main_screen/level4mainScreen.dart';
 
 import 'package:fyp/app/screens/home.dart';
-//import 'package:fyp/app/screens/home.dart';
+
 import 'package:fyp/app/screens/Dua/dua_main_screen/level1mainScreen.dart';
 
 class SecondScreen extends StatefulWidget {
@@ -24,19 +24,12 @@ class _SecondScreenState extends State<SecondScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: MyAppBar(
-          //title: 'B Islamic',
           showsearch: true,
-
           onleadingtap: () {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => const HomeScreen()));
           },
-          //push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
-          actions: const [
-            //  IconButton(onPressed: (){
-            //   Navigator.push(context, MaterialPageRoute(builder: (context)=> FourthScreen()));
-            //  }, icon:const Icon(Icons.next_plan_rounded),iconSize: 38,)
-          ],
+          actions: const [],
         ),
         body: Padding(
           padding: const EdgeInsets.only(
@@ -95,70 +88,3 @@ class _SecondScreenState extends State<SecondScreen> {
         bottomNavigationBar: const Homeicon());
   }
 }
-
-  
-
-
-// // ignore_for_file: unused_label
-
-// import 'dart:convert';
-
-// import 'package:flutter/material.dart';
-// void main(){
-// runApp( MaterialApp(
-// home:Scaffold(
-//   backgroundColor:const Color.fromARGB(255, 209, 113, 145),
-//     appBar:AppBar(
-//     title:const Text('B ISLAMIC'),
-//     centerTitle: true,
-  
-//     backgroundColor: Colors.pinkAccent,
-//      ),
-     
-//   body:Column(
-//     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//   children: [
-//     const Text('B ISLAMIC',style:TextStyle(fontSize: 12)),
-//     Center(
-//       child:Container(
-        
-//          child: const Image(
-//         image:AssetImage('kid.png'),
-//        height:  500,
-//        width: 900,
-//        fit:BoxFit.fill,
-      
-//         ),
-        
-//         )
-      
-//     ),
-//     // ignore: prefer_const_constructors
-//    Icon(Icons.play_arrow,
-//    size:60,
-//    color: Colors.amberAccent,
-//    ),
-  
-//   ],
-//   // Center(
-//   //   child: Container(
-//   //     // child:const Text('B ISLAMIC'),
-//   //       child:Image(
-//   //       image:const AssetImage('kid.png'), 
-        
-//   //       height: 100,
-       
-        
-//   //       ),
-      
-//   //   ),
-    
-//   ),
- 
-//   )
-  
-
-      
-//         ),
-//     );
-//}

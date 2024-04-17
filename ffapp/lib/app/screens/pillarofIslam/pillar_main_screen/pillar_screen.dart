@@ -10,11 +10,6 @@ import 'package:fyp/app/screens/pillarofIslam/Tauheed.dart';
 import 'package:fyp/app/screens/pillarofIslam/Zakat.dart';
 import 'package:fyp/app/screens/home.dart';
 
-// void main()
-// {
-
-//   runApp(const PP());
-// }
 class PP extends StatelessWidget {
   const PP({super.key});
 
@@ -71,9 +66,6 @@ class PP extends StatelessWidget {
                                 builder: (context) => const Salahscreen()));
                       },
                       child: const Pillar(
-                        // onTap: () {
-                        //   Navigator.push(context, MaterialPageRoute(builder: (context)=>PP()));
-                        // },
                         fcontainerclr: Colors.brown,
                         firstheight: 130,
                         firstwidth: 100,
@@ -186,11 +178,6 @@ class PP extends StatelessWidget {
             ),
           ),
         ),
-        bottomNavigationBar: Homeicon()
-        //   onPressed: () {
-        //   Navigator.pop(context,
-        //       MaterialPageRoute(builder: (context) => const HomeScreen()));
-        // }),
-        );
+        bottomNavigationBar: Homeicon());
   }
 }

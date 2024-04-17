@@ -35,11 +35,7 @@ class _Level2ScreenState extends State<Level2Screen> {
           Navigator.pop(context,
               MaterialPageRoute(builder: (context) => const SecondScreen()));
         },
-        actions: const [
-          //  IconButton(onPressed: (){
-          //   Navigator.push(context, MaterialPageRoute(builder: (context)=> FourthScreen()));
-          //  }, icon:const Icon(Icons.next_plan_rounded),iconSize: 38,)
-        ],
+        actions: const [],
       ),
       body: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/src/widgets/container.dart';
-//import 'package:fyp/app/screens/home.dart';
 
 class Homeicon extends StatelessWidget {
   final IconData icon;
@@ -17,9 +15,7 @@ class Homeicon extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: () {
-        //Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
         Navigator.popUntil(context, (route) => route.isFirst);
-        //pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>const HomeScreen()), (route) => route.isFirst
       },
       icon: Icon(
         icon,

@@ -82,16 +82,10 @@ class MyAppBar extends StatelessWidget implements PreferredSize {
                 value: 3,
                 child: Text('Contact Us'),
               ),
-              // PopupMenuItem(
-              //   value:3,
-              //   child: Text('theme'),
-
-              //),
             ];
           },
           onSelected: (value) {
             if (value == 1) {
-              //Navigator.push(context, MaterialPageRoute(builder: (context)=>const About()));
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => const About()),
@@ -100,28 +94,14 @@ class MyAppBar extends StatelessWidget implements PreferredSize {
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => const Parentsguide()),
-                  (route) => route.isFirst
-                  //Navigator.push(context,MaterialPageRoute(builder: (context)=>const Parentsguide()));
-                  );
+                  (route) => route.isFirst);
             } else {
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => Email()),
-                  (route) => route.isFirst
-                  //Navigator.push(context,MaterialPageRoute(builder: (context)=>const Parentsguide()));
-                  );
+                  (route) => route.isFirst);
             }
           },
-
-          //    else if (value==2){
-          // Navigator.push(context, MaterialPageRoute(builder: (context)=>const Parentsguide()));
-          //    }
-
-          //    else{
-          //      value==3;
-          //    }
-          //    Navigator.push(context,MaterialPageRoute(builder: (context)=>const Mode()));
-          //       },
         ),
       ],
     );

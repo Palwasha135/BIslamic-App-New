@@ -40,9 +40,7 @@ class _FifthScreenState extends State<FifthScreen> {
           ))),
         ],
       ),
-//  bottomNavigationBar:IconButton(onPressed: (){
-// Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
-//           }, icon: const Icon(Icons.home_rounded),iconSize: 44,color: Colors.deepOrange,),
+//
     );
   }
 }

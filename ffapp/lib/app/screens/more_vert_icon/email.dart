@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fyp/app/reusable_widgets/appbar.dart';
 import 'package:fyp/app/reusable_widgets/home_icon.dart';
+import 'package:fyp/app/screens/home.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-//final Uri _url = Uri.parse('hilalkhan10005@gmail.com');
 final emails = ['bislamicapp@gmail.com'];
 
 class Email extends StatelessWidget {
@@ -17,6 +18,13 @@ class Email extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MyAppBar(
+        onleadingtap: () {
+          Navigator.pop(context,
+              MaterialPageRoute(builder: (context) => const HomeScreen()));
+        },
+        actions: const [],
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -59,6 +67,5 @@ class Email extends StatelessWidget {
       ),
       bottomNavigationBar: const Homeicon(),
     );
-    // String> emails = ['john@example.com', 'jane@example.com', 'bob@example.com'];
   }
 }
